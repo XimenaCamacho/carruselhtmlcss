@@ -1,0 +1,136 @@
+/*reset de margenes y demas de cada navegador*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+/*Imagen de fondo del sitio, cobertura y estilo de letra*/
+body {
+    background-image: url(../images/fondo1.jpg);
+    background-size: cover;
+    font-family: Verdana;
+}
+/*Organiza los distintos elementos dentro del header*/
+.organizar-cabecera {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+/*Tipo de fuente usada para el h1*/
+@font-face {
+    font-family: 'crunchyregular';
+    src: url(../font/crunchy.woff2);
+}
+/*Estilos del h1*/
+.titulo-dd {
+    text-align: center;
+    font-family: 'crunchyregular';
+    color: darkorange;
+    font-size: 80px;
+    padding: 5px 15px 5px 15px;
+    
+}
+/*Estilos de los vinculos*/
+.organizar-links {
+    margin-top: 20px;
+}
+.organizar-links a{  
+    text-decoration: none;
+    color: #070707;
+}
+.organizar-links a:hover{
+    color: rgb(19, 18, 18);
+}
+/*Estilos del logo*/
+.logo {
+    margin-top: 15px;
+    width: 100px;
+    height: 150px;
+}
+/*Estilos de imagenes de links*/
+.carrito {
+    margin-left: 5px;
+    width: 45px;
+    height: 45px;
+}
+/*Estilos del footer*/
+footer {
+    background-color: rgba(75, 75, 75, 0.08);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+/* metodo de slider en html y css */
+.slider {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: cambio 14s infinite alternate;
+}
+.slider li {
+    list-style: none;
+    width: 100%;
+}
+.slider img {
+    width: 100%;
+}
+@keyframes cambio {
+    0% {margin-left: 0;}
+    30% {margin-left: 0;}
+    35% {margin-left: -100%;}
+    65% {margin-left: -100%;}
+    70% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}
+.menu{ /*botones 1, 2 y 3 del slider*/
+    text-align: center;
+    margin: 20px;
+  }
+.menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+.menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+  }
+  /* fin del slider */
+section {
+    text-align: center;
+    margin: auto;
+}
+.vertical{
+    background-color: rgba(74, 75, 74, 0.08);
+    display: inline-block;
+    border-radius: 15px;
+    margin-left: 20px;
+    width: 20%;
+    height: 480px;
+}
+
+.imagenes {
+    width: 200px;
+    height: 200px;
+    margin-top: 60px;
+    border-radius: 50%;
+}
+.muestra p {
+    text-align: center;
+}
+
+
